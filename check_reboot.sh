@@ -8,7 +8,7 @@
 if [ $? != 0 ]
 then
 	echo "Reboot is required following weekly patching.  Server is rebooting now!"
-	reboot
+	/sbin/reboot
 else
 	echo "No reboot is required."
 fi
