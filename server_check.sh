@@ -1,14 +1,23 @@
 #!/bin/bash
 
-echo "Server Check"
+echo "Performing Server Check"
+
+sleep 3
 
 file_sys() {
 
 	echo "*****Checking file system space*****"
-	df -h
+	/bin/df -h
+}
+
+kernel_v() {
+
+	echo "*****Checking Kernel Version*****"
+	/bin/uname -r
 }
 
 file_sys
-
+sleep 2
+kernel_v
 
 
