@@ -1,8 +1,15 @@
 #!/bin/bash
 
-echo "Performing Server Check"
+echo "Running Checks"
 
-sleep 3
+sleep 2
+
+mem_check() {
+
+	echo "*****Checking Memory*****"
+	free -h
+}
+
 
 file_sys() {
 
@@ -16,8 +23,9 @@ kernel_v() {
 	/bin/uname -r
 }
 
+
+mem_check
 file_sys
-sleep 2
 kernel_v
 
 
