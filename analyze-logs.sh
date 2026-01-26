@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LOG_DIR="/Users/joseferreira/Documents/bash_scripting/logs"
+LOG_DIR="/Users/joseferreira/Documents/bash-scripting/logs"
 APP_LOG_FILE="application.log"
 SYS_LOG_FILE="system.log"
 
